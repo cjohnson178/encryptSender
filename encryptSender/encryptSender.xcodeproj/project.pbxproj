@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A464CE926F2B9B6004B78EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A464CE826F2B9B6004B78EC /* Assets.xcassets */; };
+		9A464CF026F2B9B6004B78EC /* encryptSender MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9A464CEF26F2B9B6004B78EC /* encryptSender MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9A464CF526F2B9B6004B78EC /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A464CF426F2B9B6004B78EC /* Messages.framework */; };
+		9A464CF826F2B9B6004B78EC /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A464CF726F2B9B6004B78EC /* MessagesViewController.swift */; };
+		9A464CFB26F2B9B6004B78EC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A464CF926F2B9B6004B78EC /* MainInterface.storyboard */; };
+		9A464CFD26F2B9B6004B78EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A464CFC26F2B9B6004B78EC /* Assets.xcassets */; };
+		9A464D0926F818F4004B78EC /* CaesarCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A464D0826F818F4004B78EC /* CaesarCipher.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A464CF126F2B9B6004B78EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A464CDF26F2B9B5004B78EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A464CEE26F2B9B6004B78EC;
+			remoteInfo = "encryptSender MessagesExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9A464D0426F2B9B6004B78EC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9A464CF026F2B9B6004B78EC /* encryptSender MessagesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9A464CE526F2B9B5004B78EC /* encryptSender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = encryptSender.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A464CE826F2B9B6004B78EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A464CEA26F2B9B6004B78EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A464CEF26F2B9B6004B78EC /* encryptSender MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "encryptSender MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A464CF426F2B9B6004B78EC /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		9A464CF726F2B9B6004B78EC /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		9A464CFA26F2B9B6004B78EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		9A464CFC26F2B9B6004B78EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A464CFE26F2B9B6004B78EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A464D0826F818F4004B78EC /* CaesarCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaesarCipher.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A464CEC26F2B9B6004B78EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A464CF526F2B9B6004B78EC /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A464CDE26F2B9B5004B78EC = {
+			isa = PBXGroup;
+			children = (
+				9A464CE726F2B9B5004B78EC /* encryptSender */,
+				9A464CF626F2B9B6004B78EC /* encryptSender MessagesExtension */,
+				9A464CF326F2B9B6004B78EC /* Frameworks */,
+				9A464CE626F2B9B5004B78EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A464CE626F2B9B5004B78EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A464CE526F2B9B5004B78EC /* encryptSender.app */,
+				9A464CEF26F2B9B6004B78EC /* encryptSender MessagesExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A464CE726F2B9B5004B78EC /* encryptSender */ = {
+			isa = PBXGroup;
+			children = (
+				9A464CE826F2B9B6004B78EC /* Assets.xcassets */,
+				9A464CEA26F2B9B6004B78EC /* Info.plist */,
+			);
+			path = encryptSender;
+			sourceTree = "<group>";
+		};
+		9A464CF326F2B9B6004B78EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A464CF426F2B9B6004B78EC /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A464CF626F2B9B6004B78EC /* encryptSender MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9A464CF726F2B9B6004B78EC /* MessagesViewController.swift */,
+				9A464D0826F818F4004B78EC /* CaesarCipher.swift */,
+				9A464CF926F2B9B6004B78EC /* MainInterface.storyboard */,
+				9A464CFC26F2B9B6004B78EC /* Assets.xcassets */,
+				9A464CFE26F2B9B6004B78EC /* Info.plist */,
+			);
+			path = "encryptSender MessagesExtension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A464CE426F2B9B5004B78EC /* encryptSender */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A464D0526F2B9B6004B78EC /* Build configuration list for PBXNativeTarget "encryptSender" */;
+			buildPhases = (
+				9A464CE326F2B9B5004B78EC /* Resources */,
+				9A464D0426F2B9B6004B78EC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A464CF226F2B9B6004B78EC /* PBXTargetDependency */,
+			);
+			name = encryptSender;
+			productName = encryptSender;
+			productReference = 9A464CE526F2B9B5004B78EC /* encryptSender.app */;
+			productType = "com.apple.product-type.application.messages";
+		};
+		9A464CEE26F2B9B6004B78EC /* encryptSender MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A464D0126F2B9B6004B78EC /* Build configuration list for PBXNativeTarget "encryptSender MessagesExtension" */;
+			buildPhases = (
+				9A464CEB26F2B9B6004B78EC /* Sources */,
+				9A464CEC26F2B9B6004B78EC /* Frameworks */,
+				9A464CED26F2B9B6004B78EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "encryptSender MessagesExtension";
+			productName = "encryptSender MessagesExtension";
+			productReference = 9A464CEF26F2B9B6004B78EC /* encryptSender MessagesExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A464CDF26F2B9B5004B78EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					9A464CE426F2B9B5004B78EC = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					9A464CEE26F2B9B6004B78EC = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 9A464CE226F2B9B5004B78EC /* Build configuration list for PBXProject "encryptSender" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A464CDE26F2B9B5004B78EC;
+			productRefGroup = 9A464CE626F2B9B5004B78EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A464CE426F2B9B5004B78EC /* encryptSender */,
+				9A464CEE26F2B9B6004B78EC /* encryptSender MessagesExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A464CE326F2B9B5004B78EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A464CE926F2B9B6004B78EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A464CED26F2B9B6004B78EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A464CFD26F2B9B6004B78EC /* Assets.xcassets in Resources */,
+				9A464CFB26F2B9B6004B78EC /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A464CEB26F2B9B6004B78EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A464CF826F2B9B6004B78EC /* MessagesViewController.swift in Sources */,
+				9A464D0926F818F4004B78EC /* CaesarCipher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A464CF226F2B9B6004B78EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A464CEE26F2B9B6004B78EC /* encryptSender MessagesExtension */;
+			targetProxy = 9A464CF126F2B9B6004B78EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9A464CF926F2B9B6004B78EC /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A464CFA26F2B9B6004B78EC /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A464CFF26F2B9B6004B78EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A464D0026F2B9B6004B78EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A464D0226F2B9B6004B78EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "encryptSender MessagesExtension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cjohnson311525.encryptSender.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A464D0326F2B9B6004B78EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "encryptSender MessagesExtension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cjohnson311525.encryptSender.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9A464D0626F2B9B6004B78EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = encryptSender/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = cjohnson311525.encryptSender;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A464D0726F2B9B6004B78EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = encryptSender/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = cjohnson311525.encryptSender;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A464CE226F2B9B5004B78EC /* Build configuration list for PBXProject "encryptSender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A464CFF26F2B9B6004B78EC /* Debug */,
+				9A464D0026F2B9B6004B78EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A464D0126F2B9B6004B78EC /* Build configuration list for PBXNativeTarget "encryptSender MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A464D0226F2B9B6004B78EC /* Debug */,
+				9A464D0326F2B9B6004B78EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A464D0526F2B9B6004B78EC /* Build configuration list for PBXNativeTarget "encryptSender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A464D0626F2B9B6004B78EC /* Debug */,
+				9A464D0726F2B9B6004B78EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A464CDF26F2B9B5004B78EC /* Project object */;
+}
